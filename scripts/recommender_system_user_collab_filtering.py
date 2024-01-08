@@ -13,4 +13,21 @@ train_df = pd.read_csv('/Users/paramanandbhat/Downloads/Article_Recommendation 2
 print(train_df.head())
 print(train_df.columns)
 
+#Reading article info file
+
+article_info_df = pd.read_csv('/Users/paramanandbhat/Downloads/Article_Recommendation 2/article_info.csv')
+
+print(article_info_df.head())
+
+print(article_info_df.columns)
+
+
+#Reading test file
+
+test_df = pd.read_csv('/Users/paramanandbhat/Downloads/Article_Recommendation 2/test.csv')
+
+print(test_df.head())
+
+print(test_df.columns)
+
 
