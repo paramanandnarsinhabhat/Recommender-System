@@ -1,0 +1,15 @@
+Executive Summary: Collaborative Filtering Model Comparison
+
+The criterion for our evaluation was the Root Mean Square Error (RMSE), which measures the accuracy of predictions made by each model. 
+A lower RMSE is indicative of a model's superior ability to forecast user preferences accurately.
+
+The performance of the models is summarized below:
+
+- Matrix-Based Collaborative Filtering: RMSE = 0.9135
+- Item-Based Collaborative Filtering (Weighted Mean Model): RMSE = 1.0316
+- Mean Model:** RMSE = 1.0420
+- User-Based Collaborative Filtering: RMSE = 1.0950
+
+It is evident from our analysis that the Matrix-Based Collaborative Filtering model demonstrates a remarkable prediction precision, with the lowest RMSE of 0.9135. This model's predictive accuracy surpassed that of the traditional user-based and item-based methods. 
+
+
