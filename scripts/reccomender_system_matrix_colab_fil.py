@@ -53,6 +53,7 @@ model_best.fit(trainset)
 test_df = pd.read_csv('/Users/paramanandbhat/Downloads/Article_Recommendation 2/test.csv')
 testset = list(zip(test_df['user_id'], test_df['article_id'], [None]*len(test_df)))
 predictions_test = model_best.test(testset)
+
 # Add Predictions to Test DataFrame
 test_df['rating'] = [pred.est for pred in predictions_test]
 
