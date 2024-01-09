@@ -89,7 +89,7 @@ def rmse_score(model, data):
 # Compute RMSE for the Mean Model on Validation Data
 rmse_mean_model = rmse_score(cf_user_mean, validation_data)
 
-print(rmse_mean_model)
+print("Mean model rmse score", rmse_mean_model)
 
 # Compute the Pearson Correlation using the ratings matrix
 pearson_corr = r_matrix.T.corr(method='pearson')
@@ -118,7 +118,7 @@ def cf_user_wmean(user_id, article_id):
 
 # Compute RMSE for the Weighted Mean Model on Validation Data
 rmse_wmean_model = rmse_score(cf_user_wmean, validation_data)
-print(rmse_wmean_model)
+print("User rmse",rmse_wmean_model)
 
 # Predicting ratings for the test dataset using the User-Based Collaborative Filtering with Weighted Mean Ratings model
 test_predictions_wmean = test_df.copy()
